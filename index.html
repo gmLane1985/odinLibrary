@@ -7,6 +7,40 @@
     <title>Odin Project Library</title>
   </head>
   <body>
+    <button id="newBookBtn">New Book</button>
+
+    <dialog id="bookDialog">
+      <form id="bookForm">
+        <label>
+          Title:
+          <input type="text" id="titleInput" required />
+        </label>
+
+        <label>
+          Author:
+          <input type="text" id="authorInput" required />
+        </label>
+
+        <label>
+          Year Published:
+          <input type="number" id="yearInput" />
+        </label>
+
+        <label>
+          Pages:
+          <input type="number" id="pagesInput" required />
+        </label>
+
+        <label>
+          Read:
+          <input type="checkbox" id="readInput" />
+        </label>
+
+        <button type="submit">Add Book</button>
+        <button type="button" id="closeDialog">Cancel</button>
+      </form>
+    </dialog>
+
     <div id="libraryDisplay"></div>
 
     <script src="script.js"></script>
