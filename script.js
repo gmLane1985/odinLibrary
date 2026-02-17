@@ -1,10 +1,15 @@
 const myLibrary = [];
 
-function Book(title, author) {
+function Book(title, author, year, pages, isRead) {
   this.title = title;
   this.author = author;
+  this.year = year;
+  this.pages = pages;
+  this.isRead = isRead;
+  this.id = crypto.randomUUID();
 }
 
 function addBookToLibrary() {
-  // take params, create a book then store it in the array
+  let newBook = new Book(title, author, year, pages, isRead);
+  myLibrary.push(newBook);
 }
